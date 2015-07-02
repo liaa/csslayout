@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent {
+            /*float: left;*/
+            background-color: lightgray;
+            /*margin-right: 20px;*/
+            /*border-bottom: 1px solid transparent;*/
+        }
+
+        .parent1 {
+        }
+
+        .parent2 {
+            border-bottom: 1px solid red;
+        }
+
+        .parent3 {
+            float: left;
+        }
+
+        .parent4 {
+            float: left;
+            border-bottom: 1px solid red;
+        }
+
+        .children {
+            /*height: 20px;*/
+            margin-bottom: 20px;
+        }
+
+        .block1 {
+            background-color: lightcyan;
+        }
+    </style>
+</head>
+<body>
+<div class="parent parent1">
+    <p class="children">Child with margin-bottom 20px; in Parent element with backgroundColor:lightgray</p>
+    <p class="children">Child with margin-bottom 20px; in Parent element with backgroundColor:lightgray</p>
+</div>
+<div class="parent parent2">
+    <p class="children">Child with margin-bottom 20px; in Parent element with backgroundColor:lightgray;</p>
+    <p class="children">Child with margin-bottom 20px ; in Parent element with backgroundColor:lightgray;  <strong>Child also have border-bottom:1px solid red</strong></p>
+</div>
+<div class="parent parent3">
+    <p class="children">Child 1</p>
+    <p class="children">Child 2</p>
+</div>
+<div class="parent parent4">
+    <p class="children">Child 1</p>
+    <p class="children">Child 2</p>
+</div>
+</body>
+</html>

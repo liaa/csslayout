@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        h1 {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-family: 'helvetica';
+        }
+        p {
+            line-height: 1.6;
+        }
+        .examples {
+            margin-top: 50px;
+        }
+        .example {
+            width: 100%;
+            float: left;
+            margin-bottom: 100px;
+            border-bottom: 1px solid lightgray;
+        }
+        .example-title {
+            text-align: center;
+            margin: 0 0 20px 0;
+        }
+        .example-iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+   <h1>Here is some CSS layout examples</h1>
+   <p>This project is dedicated to show and explain CSS layout technologies.</p>
+   <p>Every box below will show the detail of a CSS layout technique.</p>
+   <p>As you see the site is poorly designed. Make pull request if you want join in.</p>
+    <div class="examples">
+
+        <div class="example">
+            <p class="example-title">Block level parent height calculation</p>
+            <iframe class="example-iframe" src="examples/ParentBoxSize.html" frameborder="0"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>Here are some resource for CSS learning.</p>
+        <ul>
+            <li><a href="http://learnlayout.com/">Learn CSS Layout</a></li>
+            <li><a href="http://csswizardry.com/">CSSWizardry Blog</a></li>
+            <li><a href="http://mrmrs.cc/">ADAM MORSE Blog</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
