@@ -1,0 +1,89 @@
+/* Table Of Content */
+/* 1. reset */
+/* 2. layout class */
+/* 3. typegraphy class */
+/* 4. style class */
+
+
+/* reset */
+
+/* layout */
+.l-b {
+    display: block;
+    border-bottom: 1px solid transparent;
+}
+
+.l-band--big {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.ptm {
+    padding-top: 1rem;
+}
+
+.phm {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.pvm {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.pvl {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* typography class*/
+.f-c {
+    text-align: center;
+}
+
+body {
+    color : #333333;
+    font-family: 'Heiti SC';
+    font-size: 16px;
+    line-height: 1.68;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 2.0;
+    font-weight: bold;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.68;
+}
+
+/* style class */
+
+.color-gray-1
+{
+    color: #9C9C9C;
+}
+
+
+/* module */
+.m-example {
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.example-description {
+    width: 100%;
+}
+
+.example-iframe {
+    width: 100%;
+}

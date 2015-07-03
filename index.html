@@ -3,61 +3,43 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>CSS Layout</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        h1 {
-            margin-bottom: 30px;
-            line-height: 1.6;
-            font-family: 'helvetica';
-        }
-        p {
-            line-height: 1.6;
-        }
-        .examples {
-            margin-top: 50px;
-        }
-        .example {
-            width: 100%;
-            float: left;
-            margin-bottom: 100px;
-            border-bottom: 1px solid lightgray;
-        }
-        .example-title {
-            text-align: center;
-            margin: 0 0 20px 0;
-        }
-        .example-iframe {
-            width: 100%;
-            height: 100%;
-        }
     </style>
 </head>
 <body>
-   <h1>Here is some CSS layout examples</h1>
-   <p>This project is dedicated to show and explain CSS layout technologies.</p>
-   <p>Every box below will show the detail of a CSS layout technique.</p>
-   <p>As you see the site is poorly designed. Make pull request if you want join in.</p>
-    <div class="examples">
+<header class="l-b l-band--big f-c">
+    <h1>CSS 布局技术</h1>
 
-        <div class="example">
-            <p class="example-title">Block level parent height calculation</p>
-            <iframe class="example-iframe" src="examples/ParentBoxSize.html" frameborder="0"></iframe>
+    <h3 class="color-gray-1">CSS布局例子以及解释</h3>
+</header>
+<div class="examples">
+    <div class="m-example phm pvl">
+        <div class="example-descriptions">
+            <h2 class="example-title">Block level parent height calculation</h2>
+
+            <p class="example-text">Here we will see 3 types of block level element height calculation:</p>
+
+            <p>0. without bottom padding or border</p>
+            <p>1. with bottom padding or border</p>
+            <p>2. floated block element</p>
         </div>
+        <iframe class="example-iframe ptm" src="examples/ParentBoxSize.html" frameborder="0"></iframe>
     </div>
-    <footer>
-        <p>Here are some resource for CSS learning.</p>
-        <ul>
-            <li><a href="http://learnlayout.com/">Learn CSS Layout</a></li>
-            <li><a href="http://csswizardry.com/">CSSWizardry Blog</a></li>
-            <li><a href="http://mrmrs.cc/">ADAM MORSE Blog</a></li>
-        </ul>
-        <p>View on Github: <a href="https://github.com/liaa/csslayout">liaa/csslayout</a></p>
-    </footer>
+</div>
+<footer>
+    <!--<p>Here are some resource for CSS learning.</p>-->
+    <!--<ul>-->
+        <!--<li><a href="http://learnlayout.com/">Learn CSS Layout</a></li>-->
+        <!--<li><a href="http://csswizardry.com/">CSSWizardry Blog</a></li>-->
+        <!--<li><a href="http://mrmrs.cc/">ADAM MORSE Blog</a></li>-->
+    <!--</ul>-->
+    <!--<p>View on Github: <a href="https://github.com/liaa/csslayout">liaa/csslayout</a></p>-->
+    <p class="color-gray-1 phm">通过以下方式进行关注: <a href="https://github.com/liaa/csslayout" target="_blank"> <i class="fa fa-github"></i></a></p>
+    <p class="f-c ptm color-gray-1">made by <a class="color-gray-1" href="https://twitter.com/liaa">liaa</a> with <i class="fa fa-heart" style="color:red"></i></p>
+
+</footer>
 </body>
 </html>
